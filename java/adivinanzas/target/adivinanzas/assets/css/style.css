@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #004173;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-size: 2em;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+nav a:hover{
+    color: #02152b;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+#jugar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#jugar a{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #0979b0;
+}
+
+#jugar a:hover{
+    background-color: #004173;
+}
+
+#instrucciones {
+    text-align: center;
+    padding: 200px 12px;
+    background-color: #004173;
+    color: white;
+}
+
+#instrucciones div {
+    background: rgba(255, 255, 255, 0.15);
+    width: 400;
+    min-width: 450px;
+    border-radius: 10px;
+    border: solid 1px #fff;
+    margin: 20px 500px;
+    color: white;
+}
+
+#instrucciones p {
+    text-align: center;
+    color: #fff;
+    margin: 25px;
+}
